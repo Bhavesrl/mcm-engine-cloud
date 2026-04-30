@@ -54,6 +54,7 @@ def create_app(env=None):
     from app.routes.trend      import trend_bp
     from app.routes.api        import api_bp
     from app.routes.ai_assistant import ai_bp
+    from app.routes.explorer   import explorer_bp
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(admin_bp,   url_prefix="/admin")
@@ -63,6 +64,7 @@ def create_app(env=None):
     app.register_blueprint(trend_bp,   url_prefix="/trend")
     app.register_blueprint(api_bp,     url_prefix="/api")
     app.register_blueprint(ai_bp,      url_prefix="/ai")
+    app.register_blueprint(explorer_bp)
 
     # ─── Inizializza DB + crea admin di default ───────────────
     with app.app_context():

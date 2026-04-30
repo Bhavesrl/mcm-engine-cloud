@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:flask": "vite build --mode flask",
     "preview": "vite preview"
   },
   "dependencies": {
