@@ -1,0 +1,11 @@
+# Dipendenze slim per Vercel (escluse: kaleido, ollama, fpdf2, Pillow)
+Flask==3.0.3
+Flask-CORS==4.0.1
+Flask-Login==0.6.3
+Flask-SQLAlchemy==3.1.1
+psycopg2-binary>=2.9.7
+pandas>=2.2.3
+numpy>=1.26.4
+openpyxl==3.1.2
+plotly==5.22.0
+python-dotenv==1.0.1
